@@ -15,6 +15,6 @@ cd cloudbreak_deploy
 
 Edit the inventory file in cloudbreak-deploy and run:
 ```
-ansible-playbook -u "ssh_user" --inventory-file=inventory cloudbreak_deploy.yml
+ansible-playbook -u "ssh_user" --inventory-file=inventory cloudbreak_deployer.yml
 ```
 
