@@ -7,7 +7,7 @@ You need to install ansible and have provided ssh access to the sudo "ssh_user" 
 
 ```
 pip install ansible
-https://github.com/PedroAndrade89/cloudbreak_deploy.git
+git clone https://github.com/PedroAndrade89/cloudbreak_deploy.git
 cd cloudbreak_deploy
 ```
 
