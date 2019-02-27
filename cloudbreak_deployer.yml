@@ -9,7 +9,7 @@
         name: '*'
         state: latest
 
-    - name: install needed packages
+    - name: Install needed packages
       package:
         name: 
           - iptables-services 
@@ -18,12 +18,12 @@
           - tar
         state: latest
 
-    - name: flush INPUT chain
+    - name: Flush INPUT chain
       iptables:
         chain: INPUT
         flush: yes
 
-    - name: flush FORWARD chain
+    - name: Flush FORWARD chain
       iptables:
         chain: FORWARD
         flush: yes
@@ -39,14 +39,14 @@
         gpgkey: https://yum.dockerproject.org/gpg
 
 
-    - name: install docker
+    - name: Install docker
       package:
         name: 
           - docker-engine-1.9.1 
           - docker-engine-selinux-1.9.1
         state: latest
 
-    - name: start docker
+    - name: Start docker
       systemd:
         name: docker
         state: started
@@ -65,7 +65,7 @@
         state: directory     
         mode: 0755
 
-    - name: create Profile file 
+    - name: Create Profile file 
       file:
         path: /cloudbreak-deployment/Profile
         state: touch

@@ -1,5 +1,5 @@
 [cloudbreak-deployer]
-pandrade-2
+<hostname>
 
 [cloudbreak-deployer:vars]
 uaa_default_secret=admin
