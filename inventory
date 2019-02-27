@@ -1,0 +1,6 @@
+[cloudbreak-deployer]
+pandrade-2
+
+[cloudbreak-deployer:vars]
+uaa_default_secret=admin
+uaa_default_user_pw=admin
